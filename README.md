@@ -1,5 +1,5 @@
 
-# RelationsFB
+# Herramienta RelationsFB
 
 RelationsFB es una herramienta #OSINT que descarga las relaciones de un perfil de Facebook con solo ingresar el FBID (Identificación de Facebook).
 Siempre y cuando, si los propietarios de este perfil lo tiene de modo público. La herramienta permite elegir el tipo de relación que deseas obtener según la opción seleccionada por el investigador.
