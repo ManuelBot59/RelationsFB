@@ -1,22 +1,26 @@
 
-# Herramienta RelationsFB
+<h1 align="center">Herramienta #OSINT para la obtención de relaciones en Facebook</h1>
 
-RelationsFB es una herramienta #OSINT que descarga las relaciones de un perfil de Facebook con solo ingresar el FBID (Identificación de Facebook).
-Siempre y cuando, si los propietarios de este perfil lo tiene de modo público. La herramienta permite elegir el tipo de relación que deseas obtener según la opción seleccionada por el investigador.
+## Características:
 
-# Método de instalación:
+RelationsFB es una herramienta #OSINT que muestra y descarga (en Formato .CSV) las relaciones de un perfil de Facebook con solo ingresar el FBID (Identificación de Facebook); solo si los propietarios de este perfil lo tiene de modo público. La herramienta permite elegir el tipo de relación que deseas obtener según la opción seleccionada por el investigador.
 
-` git clone https://github.com/Manuelq059/RelationsFB.git`
+**NOTE**: Python 3 and pip3 is required
 
-` pip3 install -r requirements.txt `
+## Método de instalación:
 
-# Ejecutar.
+```bash
+git clone https://github.com/Manuelq059/RelationsFB && cd RelationsFB
+pip3 install -r requirements.txt
+```
 
-`python3 main.py -i FBID `
+## Uso:
+
+`python3 RelationsFB.py -i FBID `
 
 En el "FBID" digitar el número de identificación de Facebook del Objetivo.
 
-# Digitar según la lista que desee obtener.
+## A continuación digitar según la lista que desee obtener:
 
 * 1 - Lista de todos sus amigos (All for Friends).
 * 2 - Lista de todos sus seguidores (Followers).
@@ -26,4 +30,30 @@ En el "FBID" digitar el número de identificación de Facebook del Objetivo.
 * 6 - Lista de amistades recientes (For recent friendship)
 * 7 - Lista de amistades del colegio (friends of high school)
 
-NOTA: Herramienta desarrollada por `https://github.com/Eriys`
+En la carpeta de la herramienta se crea un archivo en formato .CSV con el número de identificación FBID.
+
+## Ejemplos de uso:
+
+```bash
+# python3 main.py -i FBID make HTML and PDF reports
+python3 RelationsFB.py -i 4 
+
+# 1 - Amigos | 2 - Seguidores | 3 - Siguiendo | 4 - Amigos de ciudad natal | 5 - Amigos ciudad actual | 6 - Amistades recientes| 7 - Amistades de colegio. 
+ Digite número ==>1
+
+```
+#### 4 es la identificación de Facebook de [Mark-Zuckerberg](https://www.facebook.com/4)
+
+## Resultados:
+<p align="center">
+  <img src="https://subir-imagen.com/images/2022/09/16/tedd1.jpg" width=500 />
+</p>
+<p align="center">
+  <img src="https://subir-imagen.com/images/2022/09/16/tedd2.jpg" width=500 />
+</p>
+<p align="center">
+  <img src="https://subir-imagen.com/images/2022/09/16/tedd3.jpg" width=500 />
+</p>
+
+
+NOTA: Herramienta desarrollada por [Eriys](https://github.com/Eriys)
