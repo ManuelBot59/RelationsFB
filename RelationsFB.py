@@ -13,7 +13,7 @@ def settings():
     args = parser.parse_args()
     userid = args.id
 
-    typeoflinks = int(input(" 1 - Amigo | 2 - Seguidores | 3 - Siguiendo | 4 - Amigos de ciudad natal | 5 - Amigos ciudad actual | 6 - Amistades recientes | 7 - Amistades de colegio. \n Digite número ==>")) -1
+    typeoflinks = int(input(" 1 - Amigos | 2 - Seguidores | 3 - Siguiendo | 4 - Amigos de ciudad natal | 5 - Amigos ciudad actual | 6 - Amistades recientes | 7 - Amistades de colegio. \n Digite número ==>")) -1
 
     app_collection = ["2","32","33", "125", "124", '1', "54"]
     b64req = "app_collection:"+str(userid)+":2356318349:"+str(app_collection[typeoflinks])
